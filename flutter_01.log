@@ -1,0 +1,93 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=bb4a2046 lib/main.dart
+
+## exception
+
+FileSystemException: FileSystemException: Cannot open file, path = '/Users/siddharthnotani/AndroidStudioProjects/tapp_application/.packages' (OS Error: No such file or directory, errno = 2)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:643:7)
+#1      _File.openSync (dart:io/file_impl.dart:487:5)
+#2      _File.readAsBytesSync (dart:io/file_impl.dart:547:18)
+#3      ForwardingFile.readAsBytesSync (package:file/src/forwarding/forwarding_file.dart:95:62)
+#4      _parse (package:flutter_tools/src/dart/package_map.dart:13:50)
+#5      PackageMap.load (package:flutter_tools/src/dart/package_map.dart:37:14)
+#6      PackageMap.map (package:flutter_tools/src/dart/package_map.dart:41:5)
+#7      new PackageUriMapper (package:flutter_tools/src/compile.dart:197:84)
+#8      ResidentCompiler._recompile (package:flutter_tools/src/compile.dart:502:26)
+<asynchronous suspension>
+#9      _RecompileRequest._run (package:flutter_tools/src/compile.dart:387:16)
+<asynchronous suspension>
+#10     _CompilationRequest.run (package:flutter_tools/src/compile.dart:367:30)
+<asynchronous suspension>
+#11     ResidentCompiler._handleCompilationRequest (package:flutter_tools/src/compile.dart:547:23)
+<asynchronous suspension>
+#12     _rootRunUnary (dart:async/zone.dart:1132:38)
+#13     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#14     _CustomZone.runUnaryGuarded (dart:async/zone.dart:931:7)
+#15     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:336:11)
+#16     _DelayedData.perform (dart:async/stream_impl.dart:591:14)
+#17     _StreamImplEvents.handleNext (dart:async/stream_impl.dart:707:11)
+#18     _PendingEvents.schedule.<anonymous closure> (dart:async/stream_impl.dart:667:7)
+#19     _rootRun (dart:async/zone.dart:1120:38)
+#20     _CustomZone.run (dart:async/zone.dart:1021:19)
+#21     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#22     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#23     _rootRun (dart:async/zone.dart:1124:13)
+#24     _CustomZone.run (dart:async/zone.dart:1021:19)
+#25     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#26     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#27     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#28     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#29     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#30     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v1.10.7, on Mac OS X 10.15 19A603, locale en-GB)
+    • Flutter version 1.10.7 at /Users/siddharthnotani/flutter
+    • Framework revision e70236e36c (5 weeks ago), 2019-10-02 09:32:30 -0700
+    • Engine revision 9e6314d348
+    • Dart version 2.6.0 (build 2.6.0-dev.0.0 1103600280)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+    • Android SDK at /Users/siddharthnotani/Library/Android/sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.2
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+    • All Android licenses accepted.
+
+[!] Xcode - develop for iOS and macOS (Xcode 11.2)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 11.2, Build version 11B52
+    ✗ CocoaPods not installed.
+        CocoaPods is used to retrieve the iOS and macOS platform side's plugin code that responds to your plugin usage on the Dart side.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/platform-plugins
+      To install:
+        sudo gem install cocoapods
+
+[✓] Android Studio (version 3.4)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 39.0.1
+    • Dart plugin version 183.6270
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+
+[!] IntelliJ IDEA Community Edition (version 2019.2.3)
+    • IntelliJ at /Applications/IntelliJ IDEA CE.app
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • For information about installing plugins, see
+      https://flutter.dev/intellij-setup/#installing-the-plugins
+
+[✓] Connected device (1 available)
+    • ONEPLUS A6003 • bb4a2046 • android-arm64 • Android 9 (API 28)
+
+! Doctor found issues in 2 categories.
+```
