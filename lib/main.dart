@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './appScreens/gradients_page.dart';
+import './appScreens/home.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.greenAccent,
         brightness: Brightness.dark,
       ),
-      home: MyGradientsPage(),
+      home: Home(),
     );
   }
 }
