@@ -1,38 +1,37 @@
 import 'package:flutter/material.dart';
 
-class createAwareness extends StatefulWidget {
+class CreateAwareness extends StatefulWidget {
   @override
   _create_awareness_screen createState() => _create_awareness_screen();
 }
 
 
-class _create_awareness_screen extends State<createAwareness> {
+class _create_awareness_screen extends State<CreateAwareness> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:
       new AppBar(
-        title: new Text("Update Fridge Items", style: TextStyle(fontSize: MediaQuery.of(context).size.width/20)),
+        title: new Text("Create Awareness", style: TextStyle(fontSize: MediaQuery.of(context).size.width/20)),
         centerTitle: true,
         elevation: 10.0,
-        leading: ,
-        actions:  <Widget> [
-          Padding(
-            padding: EdgeInsets.only(
-                right: MediaQuery.of(context).size.width/60                ),
-            child: IconButton(
-              tooltip: 'Admin Login',
-              icon: const Icon(Icons.filter_list),
-              iconSize: MediaQuery.of(context).size.height/25,
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> login_screen()));
-              },
-            ),
-          ),
-        ],
+        // leading: logo_here,
+//        actions:  <Widget> [
+//          Padding(
+//            padding: EdgeInsets.only(right: MediaQuery.of(context).size.width/60),
+//            child: IconButton(
+//              tooltip: 'Admin Login',
+//              icon: const Icon(Icons.filter_list),
+//              iconSize: MediaQuery.of(context).size.height/25,
+//              onPressed: () { },
+//            ),
+//          ),
+//        ],
       ),
-      body:
+      body: Center(
+
+      )
     );
   }
 }
@@ -46,7 +45,7 @@ class Button_confirm extends StatelessWidget {
         width: MediaQuery.of(context).size.width/2.45,
         height: MediaQuery.of(context).size.height/13,
         child: OutlineButton(
-          //color: Colors.green,
+          color: Colors.green,
           child: Text(
             "Confirm",
             textDirection: TextDirection.ltr,
@@ -61,4 +60,17 @@ class Button_confirm extends StatelessWidget {
       ),
     );
   }
+}
+
+void confirmDialog(BuildContext context) {
+  var alertDialog = AlertDialog(
+    title: new Text("Successfull!"),
+    content: new Text("You have successfully updated the fridge!"),
+  );
+
+  showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alertDialog;
+      });
 }

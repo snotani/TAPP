@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './appScreens/gradients_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.greenAccent,
         brightness: Brightness.dark,
       ),
-      home: MyHomePage(title: 'TAPP'),
+      home: MyGradientsPage(),
     );
   }
 }

@@ -24,7 +24,7 @@ class _LandPageState extends State<LandPage> {
               children: <Widget>[
               Text("TAPP", textAlign: TextAlign.center, style: TextStyle(fontSize: 50)),
                 Text('Take action and protect the planet!', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
-                Image.asset('lib/images/linus.jpg'),
+                Image.asset('lib/images/logo.png'),
               ])
 
           )

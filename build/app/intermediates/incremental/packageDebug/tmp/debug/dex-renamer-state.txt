@@ -1,4 +1,4 @@
-#Sat Nov 09 21:29:12 GMT 2019
-base.0=/home/max/Documents/University/Startup/V1/TAPP/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Sun Nov 10 05:35:14 GMT 2019
+base.0=/Users/siddharthnotani/AndroidStudioProjects/TAPP/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
