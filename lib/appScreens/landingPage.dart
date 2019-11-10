@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
+
 void main() => runApp(LandPage());
 
-class LandPage extends StatelessWidget {
+  void hello(){
+    print('hello');
+  }
+
+class LandPage extends StatefulWidget {
+  @override
+
+  _LandPageState createState() => _LandPageState();
+}
+
+class _LandPageState extends State<LandPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,10 +24,10 @@ class LandPage extends StatelessWidget {
               children: <Widget>[
               Text("TAPP", textAlign: TextAlign.center, style: TextStyle(fontSize: 50)),
                 Text('Take action and protect the planet!', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                Image.asset('lib/images/linus.jpg'),
               ])
 
           )
     ));
   }
-  
 }
