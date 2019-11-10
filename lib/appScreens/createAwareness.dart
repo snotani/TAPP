@@ -16,18 +16,6 @@ class _create_awareness_screen extends State<CreateAwareness> {
         title: new Text("Create Awareness", style: TextStyle(fontSize: MediaQuery.of(context).size.width/20)),
         centerTitle: true,
         elevation: 10.0,
-        // leading: logo_here,
-//        actions:  <Widget> [
-//          Padding(
-//            padding: EdgeInsets.only(right: MediaQuery.of(context).size.width/60),
-//            child: IconButton(
-//              tooltip: 'Admin Login',
-//              icon: const Icon(Icons.filter_list),
-//              iconSize: MediaQuery.of(context).size.height/25,
-//              onPressed: () { },
-//            ),
-//          ),
-//        ],
       ),
       body: Center(
 

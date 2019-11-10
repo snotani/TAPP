@@ -23,7 +23,7 @@ List<String> swipingCardTitles = [
   'Racism',
   'Poverty',
   'Lack of Education',
-  'Animal Slavery ',
+  'Animal Slavery',
 ];
 
 class ParallaxCardItem {

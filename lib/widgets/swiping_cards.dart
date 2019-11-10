@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:tapp_application/appScreens/gradients_page.dart';
 import 'package:tapp_application/appScreens/material_page.dart';
-import 'package:tapp_application/utils/functions.dart';
 import 'package:tapp_application/utils/textstyles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -56,8 +55,12 @@ class SwipingCards extends StatelessWidget {
               child: GestureDetector(
                 behavior: HitTestBehavior.translucent,
                 onTap: () {
-                  MyMaterialPage();
-                },
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) { return MyMaterialPage(); },
+                    ),
+                  );                },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10.0),
                   child: Material(
