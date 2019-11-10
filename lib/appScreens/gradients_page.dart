@@ -18,8 +18,8 @@ List<String> swipingCardImages = [
 ];
 
 List<String> swipingCardTitles = [
-  'Dumped Pets on the Rise',
-  'Not All Horses need to be tamed',
+  'Adopt',
+  'Protect us',
   'Love Animals, Hate Cruelty',
   'Ductaped Cat Lives!!',
   'Stray Dog Crisis',
