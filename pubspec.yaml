@@ -44,6 +44,7 @@ flutter:
   assets:
    - lib/images/linus.jpg
    - lib/images/logo.png
+   - lib/images/logoHand.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
