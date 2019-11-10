@@ -51,10 +51,15 @@ flutter:
    - lib/images/topic_discovery_imagery/unemployment.jpg
    - lib/images/topic_discovery_imagery/racism.jpg
    - lib/images/topic_discovery_imagery/protest_stream.jpg
+   - lib/images/topic_discovery_imagery/dumped_pets_on_the_rise.jpg
    - lib/images/topic_discovery_imagery/poverty.png
    - lib/images/topic_discovery_imagery/interview_stream.png
    - lib/images/topic_discovery_imagery/gay_rights.jpg
+   - lib/images/topic_discovery_imagery/tammed_horses.jpg
    - lib/images/topic_discovery_imagery/education.jpg
+   - lib/images/topic_discovery_imagery/love_animals_hate_cruelty.jpg
+   - lib/images/topic_discovery_imagery/duct_taped_cat.jpg
+   - lib/images/topic_discovery_imagery/stray_dog_crisis.jpg
    - lib/images/topic_discovery_imagery/conference_stream.jpg
    - lib/images/topic_discovery_imagery/animal_slavery.jpg
 

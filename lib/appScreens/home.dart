@@ -20,12 +20,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     List<String> topicNames = [
-      'Animal cruelty activist films undercover at German testing laboratory',
-      'Hedgehog kicked to death by boys in Sunderland in barbaric act of animal cruelty' ,
+      'Animal Slavery',
+      'Unemployment/Low Wages',
+      'LGBTQ+ Rights',
       'Racism',
-      'Gay/Lesbian Rights',
+      'Poverty',
       'Lack of Education',
-      'Unemployment/Low Wages'
     ];
     return Scaffold(
       appBar: AppBar(
@@ -134,20 +134,18 @@ class _HomeState extends State<Home> {
 //                                   image: new AssetImage('lib/images/topic_discovery_imagery/animal_slavery.jpg')
 //                                   )
 //                                   )
-//                                   ],
-//                );
-                      ],
-                            },
+                          ],
+                        );
+                          },
                     ),
                   ),
                 ),
               ]
           )
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: CreateAwareness(),
+      ), floatingActionButton: FloatingActionButton(
+        //onPressed: CreateAwareness(),
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.create),
       ),
     );
   }

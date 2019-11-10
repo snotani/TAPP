@@ -9,20 +9,20 @@ import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
 
 List<String> swipingCardImages = [
-  'lib/images/topic_discovery_imagery/unemployment.jpg',
-  'lib/images/topic_discovery_imagery/gay_rights.jpg',
-  'lib/images/topic_discovery_imagery/racism.jpg',
-  'lib/images/topic_discovery_imagery/poverty.png',
-  'lib/images/topic_discovery_imagery/education.jpg',
+  'lib/images/topic_discovery_imagery/dumped_pets_on_the_rise.jpg',
+  'lib/images/topic_discovery_imagery/tammed_horses.jpg',
+  'lib/images/topic_discovery_imagery/love_animals_hate_cruelty.jpg',
+  'lib/images/topic_discovery_imagery/duct_taped_cat.jpg',
+  'lib/images/topic_discovery_imagery/stray_dog_crisis.jpg',
   'lib/images/topic_discovery_imagery/animal_slavery.jpg',
 ];
 
 List<String> swipingCardTitles = [
-  'Unemployment/Low Wages',
-  'Gay/Lesbian Rights',
-  'Racism',
-  'Poverty',
-  'Lack of Education',
+  'Dumped Pets on the Rise',
+  'Not All Horses need to be tamed',
+  'Love Animals, Hate Cruelty',
+  'Ductaped Cat Lives!!',
+  'Stray Dog Crisis',
   'Animal Slavery',
 ];
 
