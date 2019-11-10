@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './appScreens/home.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,9 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'TAPP',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.green,
+        accentColor: Colors.greenAccent,
+        brightness: Brightness.dark,
       ),
       home: MyHomePage(title: 'TAPP'),
     );
