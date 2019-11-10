@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import './appScreens/home.dart';
-import './appScreens/material_page.dart';
-
+import './appScreens/landingPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.greenAccent,
         brightness: Brightness.dark,
       ),
-      home: MyMaterialPage(),
+      home: LandPage(),
     );
   }
 }

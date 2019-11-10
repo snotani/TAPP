@@ -53,7 +53,7 @@ class Button_confirm extends StatelessWidget {
 void confirmDialog(BuildContext context) {
   var alertDialog = AlertDialog(
     title: new Text("Successfull!"),
-    content: new Text("You have successfully updated the fridge!"),
+    content: new Text("You have successfully uploaded the media!"),
   );
 
   showDialog(
